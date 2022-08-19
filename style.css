@@ -10,18 +10,9 @@
 
 
 .all__about_them {
-  display: grid;
+   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.grid-col-2 {
-  grid-column: span 2;
-}
-
-.grid-row-2 {
-  grid-column: 4;
-  grid-row: 1 / span 2;
+ 
 }
 
 /* Fixing up the grid layout end */
@@ -78,20 +69,6 @@ background-repeat: no-repeat;
   opacity: 50%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* heading  */
 
 .about__ {
@@ -106,16 +83,22 @@ align-items: center;
   margin-right: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 900px) {
+  .all__about_them {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .grid-col-2 {
+    grid-column: span 2;
+  }
+  
+  .grid-row-2 {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+  } 
+}
